@@ -80,6 +80,19 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="C2FF9359-7757-28BC-E15A-9E8ECDAB9672">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-09 15:11:39 UTC</createdTime>
+<generatorID>58C58F23-D95B-BF53-6891-44CA2C931CBA</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<engineerTo>
+<item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>CF601A0E-8F13-F97F-8A3B-6EBBCA6EDAD9</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="421BA505-D243-461E-5A45-01FD73A8BCF7" name="media PK">

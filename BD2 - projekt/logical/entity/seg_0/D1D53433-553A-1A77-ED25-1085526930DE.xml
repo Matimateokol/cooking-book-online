@@ -25,7 +25,7 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="step" id="BF24453D-E5AB-F547-CC9C-CF0B7CD858E0">
+<Attribute name="name" id="BF24453D-E5AB-F547-CC9C-CF0B7CD858E0">
 <createdBy>Mikołaj</createdBy>
 <createdTime>2024-03-31 11:13:51 UTC</createdTime>
 <ownerDesignName>BD2 - projekt</ownerDesignName>
@@ -33,6 +33,29 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="86C65739-9C54-1B9F-7753-318FDC5B17BC">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-11 20:19:23 UTC</createdTime>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<engineerTo>
+<item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="0D9C8391-6884-63B2-DFC0-628A913CB98A">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-09 15:20:39 UTC</createdTime>
+<generatorID>914D5DAE-C6F2-193E-6B5D-B102D35F93AF</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<engineerTo>
+<item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
+</engineerTo>
+<referedAttribute>D2F200F1-E682-C779-AAE3-6D48F11F86CD</referedAttribute>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>

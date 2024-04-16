@@ -58,17 +58,6 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ingredients" id="63858873-47B7-2115-68A4-4481D1B94B28">
-<createdBy>Mikołaj</createdBy>
-<createdTime>2024-03-31 11:08:28 UTC</createdTime>
-<ownerDesignName>BD2 - projekt</ownerDesignName>
-<engineerTo>
-<item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="difficulty" id="5FBAC0E0-4899-959C-FBDE-95E1586F9418">
 <createdBy>Mikołaj</createdBy>
 <createdTime>2024-03-31 11:08:37 UTC</createdTime>
@@ -110,6 +99,18 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="62B3D2C2-C347-D766-B77B-77AD31494CC4">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-11 20:30:40 UTC</createdTime>
+<generatorID>0F9F6F6B-C4DD-B6F8-2D4D-3A921C844E9E</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<engineerTo>
+<item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
+</engineerTo>
+<referedAttribute>CF601A0E-8F13-F97F-8A3B-6EBBCA6EDAD9</referedAttribute>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
