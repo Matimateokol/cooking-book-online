@@ -22,7 +22,9 @@
 <engineerTo>
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="email" id="9D8B9DC3-C409-DC9F-F0E0-8029509CB8D5">
@@ -32,8 +34,11 @@
 <engineerTo>
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="password" id="1664A8D0-6F6F-8CB2-6235-C6FF57068128">
 <createdBy>Mikołaj</createdBy>
@@ -42,8 +47,11 @@
 <engineerTo>
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="first_name" id="D09C6AA6-0500-E515-3EBD-15F0C3651CE4">
 <createdBy>Mikołaj</createdBy>
@@ -53,8 +61,11 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="middle_name" id="C4391AB9-7852-F0CD-DB8C-9AC48F2F3525">
 <createdBy>Mikołaj</createdBy>
@@ -64,8 +75,11 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="last_name" id="ADD74734-5140-5177-D6EA-8128B3AE2AFD">
 <createdBy>Mikołaj</createdBy>
@@ -75,8 +89,11 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="address" id="60A31812-53E0-63F5-F45D-98BBC8AB4D7C">
 <createdBy>Mikołaj</createdBy>
@@ -86,8 +103,11 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="birth_date" id="F7B284E9-BF3C-4BB6-793A-98E6A2FAB624">
 <createdBy>Mikołaj</createdBy>
@@ -97,7 +117,9 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="phone_number" id="B890AB4C-DDB8-6022-17EE-FCB375AFEB49">
@@ -108,8 +130,11 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="bio" id="071E3FAA-DA7E-7C2B-8A16-45FF5BD234E3">
 <createdBy>Mikołaj</createdBy>
@@ -119,7 +144,9 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="role" id="F5EED969-0804-BF9B-997D-172AE30C9815">
@@ -130,12 +157,13 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="36BDEB48-DF90-D1F9-8FDA-70E76DF74712">
+<Attribute name="id1" id="A248A8C1-C78F-687E-468D-1855DE972AEC">
 <createdBy>Mikołaj</createdBy>
-<createdTime>2024-04-11 20:18:40 UTC</createdTime>
+<createdTime>2024-04-19 19:51:34 UTC</createdTime>
 <generatorID>58C58F23-D95B-BF53-6891-44CA2C931CBA</generatorID>
 <ownerDesignName>BD2 - projekt</ownerDesignName>
 <engineerTo>
@@ -143,7 +171,8 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>41071B77-E644-8CC6-B3BD-F52F31C1821C</referedAttribute>
-<use>0</use>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

@@ -22,7 +22,9 @@
 <engineerTo>
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="linkedin" id="8049C5B8-9CE0-9995-2D92-9357FA136B1D">
@@ -33,8 +35,11 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="facebook" id="FA4B6E23-14CA-6641-C166-EC939CC9188A">
 <createdBy>Mikołaj</createdBy>
@@ -44,8 +49,11 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="x" id="BE9B8F98-A848-1151-2105-14210E3FC4D0">
 <createdBy>Mikołaj</createdBy>
@@ -55,8 +63,11 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="github" id="64D51D95-D3A1-F9D5-70E7-3360E69433DA">
 <createdBy>Mikołaj</createdBy>
@@ -66,8 +77,11 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="discord" id="9C162F6B-244E-4649-9FB0-C3B010DADDE5">
 <createdBy>Mikołaj</createdBy>
@@ -77,8 +91,11 @@
 <item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id1" id="C2FF9359-7757-28BC-E15A-9E8ECDAB9672">
 <createdBy>Mikołaj</createdBy>
@@ -90,7 +107,9 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>CF601A0E-8F13-F97F-8A3B-6EBBCA6EDAD9</referedAttribute>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
