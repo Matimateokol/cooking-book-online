@@ -1,0 +1,63 @@
+<div
+  *ngIf="_post"
+  class="tasty-post-details__container"
+>
+  <div class="tasty-post-details__author-wrapper">
+    <span class="tasty-post-details__author-wrapper__author">
+      {{ _post.author?.firstName }} {{ _post.author?.lastName }}
+    </span>
+    <span class="tasty-post-details__author-wrapper__date">
+      {{ _post.created | date:'medium' }}
+    </span>
+  </div>
+  <div class="tasty-post-details__title-summary-wrapper">
+    <h1 class="tasty-post-details__title-summary-wrapper__title">
+      {{ _post.title }}
+    </h1>
+    <div class="tasty-post-details__title-summary-wrapper__summary">
+      <b>Summary:</b>
+      {{ _post.shortDescription }}
+    </div>
+  </div>
+  <div class="tasty-post-details__statistics-wrapper">
+    <div class="tasty-post-details__statistics-wrapper__difficulty">
+      <span>
+        <b>Difficulty:</b>
+        {{ _difficulty }}
+      </span>
+    </div>
+    <div class="tasty-post-details__statistics-wrapper__time">
+      <b>Required time:</b>
+      {{ _post.cookingTime }}
+      minutes
+    </div>
+    <div class="tasty-post-details__statistics-wrapper__categories">
+      <b>Categories:</b>
+      <ng-container *ngFor="let category of _post.categories">
+        {{ category.name }}
+      </ng-container>
+    </div>
+  </div>
+  <div class="tasty-post-details__ingredients-wrapper">
+    <h2 class="tasty-post-details__ingredients-wrapper__title">Ingredients</h2>
+    <ul class="tasty-post-details__ingredients-wrapper__list">
+      <li *ngFor="let ingredient of _post.ingredients">
+        {{ ingredient.name }}
+      </li>
+    </ul>
+  </div>
+  <div class="tasty-post-details__recipe-wrapper">
+    <h2 class="tasty-post-details__recipe-wrapper__title">Method</h2>
+    <ol class="tasty-post-details__recipe-wrapper__list">
+      <li *ngFor="let item of _post.preparationSteps">
+        {{ item.step }}
+      </li>
+    </ol>
+  </div>
+  <div class="tasty-post-details__comments">
+    <tasty-comments-list
+      [post]="_post"
+      (commentAdded)="refreshPost()"
+    ></tasty-comments-list>
+  </div>
+</div>

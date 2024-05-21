@@ -1,0 +1,19 @@
+@import "src/assets/styles/variables.scss";
+
+.tasty-comment {
+  &__container {
+    max-width: $main-size * 150;
+  }
+
+  &__author-date-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: $main-size * 3;
+    padding-top: 4 * $main-size;
+  }
+
+  &__content {
+    padding-bottom: 4 * $main-size;
+  }
+}

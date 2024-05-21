@@ -1,0 +1,128 @@
+<div class="tasty-create-post__container">
+  <form
+    [formGroup]="recipeForm"
+    (ngSubmit)="onFormSubmit()"
+    class="tasty-create-post__form"
+  >
+    <div class="tasty-create-post__input-wrapper">
+      <span class="tasty-create-post__label">Title</span>
+      <input
+        formControlName="title"
+        type="text"
+        class="tasty-create-post__input-wrapper__input"
+      >
+    </div>
+    <div class="tasty-create-post__select-wrapper">
+      <span class="tasty-create-post__label">Categories</span>
+      <mat-select
+        formControlName="categories"
+        class="tasty-create-post__select-wrapper__select"
+        multiple
+      >
+        <mat-option
+          *ngFor="let category of categoriesList"
+          [value]="category"
+        >
+          {{ category }}
+        </mat-option>
+      </mat-select>
+    </div>
+    <div class="tasty-create-post__list-input-wrapper">
+      <span class="tasty-create-post__label">Ingredients list</span>
+      <div class="tasty-create-post__list-input-wrapper__input-button-container">
+        <input
+          [formControl]="ingredient"
+          class="tasty-create-post__list-input-wrapper__input-button-container__input"
+        >
+        <button
+          [disabled]="ingredient.invalid"
+          (click)="onAddIngredientClick()"
+          class="tasty-create-post__list-input-wrapper__input-button-container__button"
+        >
+          Add
+        </button>
+      </div>
+      <ul>
+        <div
+          *ngFor="let ingredient of ingredientsList; let i = index"
+          class="tasty-create-post__list-input-wrapper__list-container"
+        >
+          <li class="tasty-create-post__list-input-wrapper__list-container__text">{{ ingredient.name }}</li>
+          <button
+            (click)="onDeleteIngredientClick(i)"
+            class="tasty-create-post__list-input-wrapper__list-container__button"
+          >
+            <mat-icon class="tasty-create-post__list-input-wrapper__list-container__button__icon">close</mat-icon>
+          </button>
+        </div>
+      </ul>
+    </div>
+    <div class="tasty-create-post__input-wrapper">
+      <span class="tasty-create-post__label">Required time (in minutes)</span>
+      <input
+        formControlName="time"
+        type="number"
+        class="tasty-create-post__input-wrapper__input"
+      >
+    </div>
+    <div class="tasty-create-post__select-wrapper">
+      <span class="tasty-create-post__label">Difficulty</span>
+      <mat-select
+        formControlName="difficulty"
+        class="tasty-create-post__select-wrapper__select"
+      >
+        <mat-option
+          *ngFor="let diff of difficulties"
+          [value]="diff"
+        >
+          {{ diff }}
+        </mat-option>
+      </mat-select>
+    </div>
+    <div class="tasty-create-post__text-area-wrapper">
+      <span class="tasty-create-post__label">Short description</span>
+      <textarea
+        formControlName="shortDescription"
+        class="tasty-create-post__textarea"
+      ></textarea>
+    </div>
+    <div class="tasty-create-post__list-input-wrapper">
+      <span class="tasty-create-post__label">Recipe steps list</span>
+      <div class="tasty-create-post__textarea-button-wrapper">
+        <textarea
+          [formControl]="step"
+          class="tasty-create-post__textarea"
+        ></textarea>
+        <button
+          [disabled]="step.invalid"
+          (click)="onAddStepClick()"
+          class="tasty-create-post__list-input-wrapper__button"
+        >
+          Add
+        </button>
+      </div>
+
+      <ol>
+        <div
+          *ngFor="let step of recipeStepsList; let i = index"
+          class="tasty-create-post__list-input-wrapper__list-container"
+        >
+          <li class="tasty-create-post__list-input-wrapper__list-container__text">{{ step.step }}</li>
+          <button
+            (click)="onDeleteStepClick(i)"
+            class="tasty-create-post__list-input-wrapper__list-container__button"
+          >
+            <mat-icon class="tasty-create-post__list-input-wrapper__list-container__button__icon">close</mat-icon>
+          </button>
+        </div>
+      </ol>
+    </div>
+    <button
+      [disabled]="recipeForm.invalid || ingredientsList.length === 0 || recipeStepsList.length === 0"
+      type="submit"
+      class="tasty-create-post__add-recipe-button"
+    >
+      Add recipe
+    </button>
+  </form>
+</div>

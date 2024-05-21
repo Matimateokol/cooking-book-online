@@ -1,0 +1,32 @@
+@import "src/assets/styles/variables.scss";
+
+:host {
+  display: block;
+}
+
+.tasty-dashboard-sidebar {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: $main-size * 60;
+    gap: $main-size * 10;
+    height: calc(100vh - $navbar-height);
+    position: sticky;
+    top: 0;
+  }
+
+  &__item-wrapper {
+    &__item {
+      color: black;
+      text-decoration: none;
+      font-size: $main-size * 3.5;
+      padding: $main-size * 2 $main-size * 5;
+
+      &__active {
+        background-color: $color-light-blue;
+      }
+    }
+  }
+}

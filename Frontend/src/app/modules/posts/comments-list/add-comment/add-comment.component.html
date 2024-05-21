@@ -1,0 +1,19 @@
+<div class="tasty-add-comment__container">
+  <form
+    [formGroup]="commentForm"
+    (submit)="addComment()"
+    class="tasty-add-comment__form"
+  >
+      <textarea
+        formControlName="comment"
+        class="tasty-add-comment__form__textarea"
+      ></textarea>
+    <button
+      [disabled]="commentForm.invalid"
+      type="submit"
+      class="tasty-add-comment__form__button"
+    >
+      Add
+    </button>
+  </form>
+</div>

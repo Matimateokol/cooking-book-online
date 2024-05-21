@@ -1,0 +1,41 @@
+<div
+  *ngIf="_user"
+  class="tasty-user-profile__container"
+>
+    <img
+      class="tasty-user-profile__image"
+      src="assets/images/avatar.jpeg"
+      alt="Profile picture"
+    >
+  <div class="tasty-user-profile__name">
+    {{ _user.firstName }} {{ _user.lastName }}
+  </div>
+  <div class="tasty-user-profile__data-wrapper">
+    <div class="tasty-user-profile__data-wrapper__icon">
+      <mat-icon>mail_outline</mat-icon>
+    </div>
+    <div class="tasty-user-profile__data-wrapper__data">
+      {{ _user.email }}
+    </div>
+  </div>
+  <div class="tasty-user-profile__data-wrapper">
+    <div class="tasty-user-profile__data-wrapper__icon">
+      <mat-icon>phone_iphone</mat-icon>
+    </div>
+    <div class="tasty-user-profile__data-wrapper__data">
+      {{ _user.phoneNumber }}
+    </div>
+  </div>
+  <div class="tasty-user-profile__data-wrapper">
+    <div class="tasty-user-profile__data-wrapper__icon">
+      <mat-icon>location_on</mat-icon>
+    </div>
+    <div class="tasty-user-profile__data-wrapper__data">
+      {{ _user.address }}
+    </div>
+  </div>
+  <div class="tasty-user-profile__description">
+    {{ _user.bio }}
+  </div>
+</div>
+

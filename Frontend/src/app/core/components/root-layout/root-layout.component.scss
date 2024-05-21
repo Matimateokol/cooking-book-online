@@ -1,0 +1,8 @@
+@import "src/assets/styles/variables.scss";
+
+.taste-root-layout {
+  &__wrapper {
+    height: calc(100vh - $navbar-height);
+    overflow: auto;
+  }
+}

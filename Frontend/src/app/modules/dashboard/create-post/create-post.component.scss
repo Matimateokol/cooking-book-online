@@ -1,0 +1,112 @@
+@use "../../../../assets/styles/mixins";
+@import "../../../../assets/styles/variables";
+
+.tasty-create-post {
+  &__container {
+    margin-top: $main-size * 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__input-wrapper {
+    margin: $main-size * 4 0;
+    display: flex;
+    flex-direction: column;
+    gap: $main-size * 2;
+
+    &__input {
+      width: $main-size * 100;
+      padding: $main-size * 2;
+      font-size: $main-size * 3;
+    }
+  }
+
+  &__select-wrapper {
+    margin-bottom: $main-size * 4;
+
+    &__select {
+      display: block;
+      width: $main-size * 100;
+      margin-top: $main-size * 2;
+      padding: $main-size * 2;
+      border: 1px solid black;
+    }
+  }
+
+  &__list-input-wrapper {
+    &__input-button-container {
+      margin: $main-size * 2 0;
+      display: flex;
+      gap: $main-size * 10;
+
+      &__input {
+        width: $main-size * 100;
+        padding: $main-size * 2;
+        font-size: $main-size * 3;
+      }
+
+      &__button {
+       @include mixins.default-button;
+      }
+    }
+
+    &__list-container {
+      margin: $main-size * 4 0;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 50px;
+
+      &__text {
+        font-size: $main-size * 3.5;
+      }
+
+      &__button {
+        width: $main-size * 5;
+        height: $main-size * 5;
+        background-color: rgba($color-main, 0.95);
+        border: none;
+        border-radius: 50%;
+
+        &__icon {
+          font-size: $main-size * 3;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $color-white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__button {
+      @include mixins.default-button;
+    }
+  }
+
+  &__label {
+    font-size: $main-size * 4;
+    font-weight: 600;
+  }
+
+  &__textarea-button-wrapper {
+    display: flex;
+    gap: $main-size * 10;
+    align-items: center;
+  }
+
+  &__textarea {
+    padding: $main-size * 2;
+    margin-top: $main-size * 2;
+    margin-bottom: $main-size * 4;
+    display: block;
+    width: $main-size * 100;
+    max-width: $main-size * 100;
+    height: $main-size * 20;
+  }
+
+  &__add-recipe-button {
+    @include mixins.default-button;
+    margin: $main-size * 2 0;
+  }
+}

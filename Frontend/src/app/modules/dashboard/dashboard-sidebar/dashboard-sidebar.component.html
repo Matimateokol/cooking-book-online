@@ -1,0 +1,14 @@
+<div class="tasty-dashboard-sidebar__container">
+  <div
+    *ngFor="let item of _dashboardSidebarItems"
+    class="tasty-dashboard-sidebar__item-wrapper"
+  >
+    <a
+      [routerLink]="item.link"
+      class="tasty-dashboard-sidebar__item-wrapper__item"
+      routerLinkActive="tasty-dashboard-sidebar__item-wrapper__item__active"
+    >
+      {{ item.name }}
+    </a>
+  </div>
+</div>

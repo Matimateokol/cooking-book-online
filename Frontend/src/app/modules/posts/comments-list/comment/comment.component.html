@@ -1,0 +1,15 @@
+<div class="tasty-comment__container">
+  <mat-divider></mat-divider>
+  <div class="tasty-comment__author-date-wrapper">
+    <div class="tasty-comment__author-date-wrapper__author">
+      {{ comment.firstName }} {{ comment.lastName }}
+    </div>
+    <div class="tasty-comment__author-date-wrapper__date">
+      {{ comment.created | date:'medium' }}
+    </div>
+  </div>
+  <div class="tasty-comment__content">
+    {{ comment.content }}
+  </div>
+  <mat-divider></mat-divider>
+</div>

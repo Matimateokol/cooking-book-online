@@ -1,0 +1,10 @@
+<div class="form">
+  <h2 class="form__title">{{ config.title }}</h2>
+  <div class="form__inputs">
+    <div class="form__inputs__input-field" *ngFor="let field of config.fields">
+      <label class="form__inputs__input-field__input-label">{{ field.label }}</label>
+      <input type="{{ field.type }}" name="{{ field.name }}" [(ngModel)]="formData[field.name]" [required]="field.required">
+    </div>
+    <button class="form__submit-button" (click)="onSubmit()" type="submit">{{ config.buttonText }}</button>
+  </div>
+</div>

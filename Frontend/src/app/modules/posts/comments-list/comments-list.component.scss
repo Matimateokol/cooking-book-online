@@ -1,0 +1,17 @@
+@import "src/assets/styles/variables.scss";
+
+.tasty-comments-list {
+  &__container {
+    margin-bottom: $main-size * 4;
+  }
+
+  &__text {
+    font-size: $main-size * 4;
+    font-weight: 600;
+    margin-bottom: $main-size * 3;
+  }
+
+  &__add-comment {
+    margin: $main-size * 3 0;
+  }
+}

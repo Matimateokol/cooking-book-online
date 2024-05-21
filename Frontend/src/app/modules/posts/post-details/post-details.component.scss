@@ -1,0 +1,57 @@
+@import "src/assets/styles/variables.scss";
+
+.tasty-post-details {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__author-wrapper {
+    margin-top: $main-size * 10;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+  }
+
+  &__title-summary-wrapper {
+    &__title {
+      margin: $main-size * 8 0;
+    }
+
+    &__summary {
+      margin-bottom: $main-size * 2;
+    }
+  }
+
+  &__statistics-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $main-size * 2;
+  }
+
+  &__ingredients-wrapper {
+    &__title {
+      margin: $main-size * 5 0;
+    }
+
+    &__list {
+      padding-left: $main-size * 8;
+      line-height: 1.5;
+    }
+  }
+
+  &__recipe-wrapper {
+    &__title {
+      margin: $main-size * 5 0;
+    }
+
+    &__list {
+      padding-left: $main-size * 8;
+      line-height: 1.5;
+    }
+  }
+
+  &__comments {
+    margin-top: $main-size * 20;
+  }
+}

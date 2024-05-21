@@ -1,0 +1,29 @@
+@use "src/assets/styles/mixins";
+@import "src/assets/styles/variables.scss";
+
+.tasty-add-comment {
+  &__container {
+    max-width: $main-size * 150;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &__textarea {
+      min-height: $main-size * 10;
+      max-height: $main-size * 20;
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    &__button {
+      @include mixins.default-button;
+      align-self: end;
+      width: $main-size * 10;
+      margin-top: $main-size * 2;
+      padding: $main-size * 2 $main-size * 7;
+      color: $color-white;
+    }
+  }
+}

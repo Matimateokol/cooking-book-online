@@ -1,0 +1,43 @@
+@import "src/assets/styles/variables.scss";
+
+.tasty-user-profile {
+  &__container {
+    background-color: $color-light-blue;
+    width: 450px;
+    min-height: 520px;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: $main-size;
+  }
+
+  &__image {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 200px;
+    border: 5px solid white;
+    margin-top: $main-size * 5;
+  }
+
+  &__name {
+    margin: $main-size * 5 0;
+    font-size: $main-size * 5;
+  }
+
+  &__data-wrapper {
+    display: flex;
+    gap: $main-size * 5;
+    align-items: center;
+    margin-bottom: $main-size * 2;
+    min-width: 200px;
+  }
+
+  &__description {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: $main-size * 5 $main-size * 10;
+  }
+}

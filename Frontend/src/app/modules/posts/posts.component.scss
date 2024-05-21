@@ -1,0 +1,11 @@
+@import "src/assets/styles/variables.scss";
+
+.tasty-posts {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10 * $main-size;
+    margin: 10 * $main-size 0;
+    justify-items: center;
+  }
+}

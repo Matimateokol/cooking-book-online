@@ -1,0 +1,212 @@
+$animationDuration: 1.2s;
+
+  @mixin signUpActive {
+    .page-container.s--signup & {
+      @content;
+    }
+  }
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(251, 207, 40);
+  background-image: url("/assets/images/bg-3.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  &__login-container {
+    display: flex;
+    height: 500px;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    width: 900px;
+    top: 0;
+    transition: transform $animationDuration ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    -webkit-box-shadow: 4px 9px 23px -3px rgba(91, 91, 99, 1);
+    -moz-box-shadow: 4px 9px 23px -3px rgba(91, 91, 99, 1);
+    box-shadow: 4px 9px 23px -3px rgba(91, 91, 99, 1);
+
+    &__banner {
+      position: absolute;
+      width: 900px;
+      height: 100%;
+      background: #fff;
+      left: 640px;
+      padding-left: 260px;
+      top: 0;
+      overflow: hidden;
+      transition: transform $animationDuration ease-in-out;
+
+      @include signUpActive {
+        transform: translate3d(-1 * 640px,0,0);
+      }
+
+      &__inner-container {
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 260px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+
+        @include signUpActive {
+          &:before {
+            transform: translate3d(1 * 640px,0,0);
+          }
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 900px;
+          height: 100%;
+          background-image: url('/assets/images/kanapeczki.jpg');
+          background-size: cover;
+          transition: transform $animationDuration ease-in-out;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.6);
+        }
+
+        &__banner-text {
+          z-index: 2;
+          display: flex;
+          gap: 15px;
+          position: absolute;
+          align-items: center;
+          flex-direction: column;
+          padding-top: 15px;
+          transition: transform $animationDuration ease-in-out;
+
+          &__title {
+            color: white;
+          }
+
+          &__description {
+            text-align: center;
+            margin: 0 10px;
+            color: white;
+            font-weight: 500;
+          }
+
+          &.show-sign-up {
+
+            @include signUpActive {
+              transform: translateX(260px*2);
+            }
+          }
+
+          &.show-sign-in {
+            transform: translateX(260px * -2);
+
+            @include signUpActive {
+              transform: translateX(0);
+            }
+          }
+        }
+
+        &__banner-button {
+          overflow: hidden;
+          z-index: 2;
+          position: relative;
+          width: 100px;
+          height: 36px;
+          background: transparent;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 15px;
+          cursor: pointer;
+          border: 2px solid #fff;
+          border-radius: 30px;
+          margin-top: 400px;
+          //margin-bottom: 40px;
+  transition: all .3s;
+
+          &:hover {
+            color: black;
+            background: white;
+          }
+
+          &:after {
+            content: '';
+            z-index: 2;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          &__btn-body {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            transition: transform $animationDuration;
+
+            &.show-sign-in {
+              transform: translateY(36px*-2);
+
+              @include signUpActive {
+                transform: translateY(0);
+              }
+            }
+
+            &.show-sign-up {
+              @include signUpActive {
+                transform: translateY(36px*2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sign-in {
+  transition-timing-function: ease-out;
+
+  @include signUpActive {
+    transition-timing-function: ease-in-out;
+    transition-duration: $animationDuration;
+    transform: translate3d(640px,0,0);
+  }
+}
+
+.sign-up {
+  z-index: -1;
+  transform: translate3d(900px * -1,0,0);
+
+  @include signUpActive {
+    transform: translate3d(0,0,0);
+  }
+}
+
+taste-auth-form {
+  position: relative;
+  height: 100%;
+  width: 640px;
+  transition: transform $animationDuration ease-in-out;
+  display: flex;
+}

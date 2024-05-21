@@ -1,0 +1,14 @@
+@import "src/assets/styles/variables.scss";
+
+.taste-dashboard {
+  &__container {
+    display: flex;
+    gap: $main-size * 80;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

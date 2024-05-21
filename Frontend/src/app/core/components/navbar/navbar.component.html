@@ -1,0 +1,29 @@
+<div class="taste-navbar__container">
+  <img
+    (click)="navigateToLandingPage()"
+    src="../../../../assets/images/logo.png"
+    alt="Tasty logo"
+    class="taste-navbar__logo"
+  >
+  <div
+    *ngFor="let item of _menuItems"
+    class="taste-navbar__item-wrapper"
+  >
+    <a
+      [routerLink]="item.link"
+      class="taste-navbar__item-wrapper__item"
+      routerLinkActive="taste-navbar__item-wrapper__item__active"
+    >
+      {{ item.title }}
+    </a>
+  </div>
+  <div class="taste-navbar__icons-wrapper">
+    <mat-icon
+      (click)="handleSignOff()"
+      class="taste-navbar__icons-wrapper__icon"
+    >
+      logout
+    </mat-icon>
+  </div>
+</div>
+

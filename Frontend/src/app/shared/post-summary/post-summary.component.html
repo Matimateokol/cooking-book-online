@@ -1,0 +1,41 @@
+<div class="tasty-post-summary__container">
+  <div class="tasty-post-summary__title-time-wrapper">
+    <div class="tasty-post-summary__title-time-wrapper__title">
+      {{ _post.title }}
+    </div>
+    <div class="tasty-post-summary__title-time-wrapper__time">
+      <mat-icon class="tasty-post-summary__title-time-wrapper__time__icon">access_time</mat-icon>
+      <span>{{ _post.cookingTime }} minutes</span>
+    </div>
+  </div>
+    <img
+      src="../../../assets/images/food.jpg"
+      alt="Food image"
+      class="tasty-post-summary__image"
+    >
+  <div class="tasty-post-summary__description">
+    {{ _post.shortDescription }}
+  </div>
+  <div class="tasty-post-summary__buttons-wrapper">
+    <button
+      (click)="openPostDetails()"
+      class="tasty-post-summary__buttons-wrapper__check-button"
+    >
+      See recipe
+    </button>
+    <button
+      (click)="handleLikeButtonClick()"
+      class="tasty-post-summary__buttons-wrapper__save-button"
+    >
+      <mat-icon
+        *ngIf="_post.isLikedByUser else notLiked"
+        class="tasty-post-summary__buttons-wrapper__save-button__icon-filled"
+      >
+        favorite
+      </mat-icon>
+      <ng-template #notLiked>
+        <mat-icon>favorite_border</mat-icon>
+      </ng-template>
+    </button>
+  </div>
+</div>

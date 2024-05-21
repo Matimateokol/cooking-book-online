@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: mysql
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+      MYSQL_ROOT_PASSWORD: mysql
+    ports:
+      - "33060:3306"
+    expose:
+      - 33066
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./mysql.cnf:/etc/mysql/conf.d/mysql.cnf
+    healthcheck:
+      test: [ "CMD-SHELL", "mysqladmin ping --silent" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - tasty-network
+  backend:
+    build: .
+    container_name: backend
+    image: backend:latest
+    env_file: dev.env
+    ports:
+      - "8080:8080"
+    expose:
+      - 8080
+    networks:
+      - tasty-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+networks:
+  tasty-network:

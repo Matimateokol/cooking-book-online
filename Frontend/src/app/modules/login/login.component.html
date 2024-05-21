@@ -1,0 +1,22 @@
+<div [ngClass]="{'s--signup': isSignUpForm}" class="page-container">
+  <div class="page-container__login-container">
+    <taste-auth-form [config]="loginConfig" class="sign-in"></taste-auth-form>
+    <div class="page-container__login-container__banner">
+      <div class="page-container__login-container__banner__inner-container">
+        <div class="page-container__login-container__banner__inner-container__banner-text show-sign-up">
+          <h2 class="page-container__login-container__banner__inner-container__banner-text__title">New Here?</h2>
+          <p class="page-container__login-container__banner__inner-container__banner-text__description">Sign up and discover great amount of new opportunities!</p>
+        </div>
+        <div class="page-container__login-container__banner__inner-container__banner-text show-sign-in">
+          <h2 class="page-container__login-container__banner__inner-container__banner-text__title">One of us?</h2>
+          <p class="page-container__login-container__banner__inner-container__banner-text__description">If you already have an account, just sign in. We've missed you!</p>
+        </div>
+        <div class="page-container__login-container__banner__inner-container__banner-button" (click)="isSignUpForm = !isSignUpForm">
+          <span class="page-container__login-container__banner__inner-container__banner-button__btn-body show-sign-up">Sign Up</span>
+          <span class="page-container__login-container__banner__inner-container__banner-button__btn-body show-sign-in">Sign In</span>
+        </div>
+      </div>
+      <taste-auth-form [config]="registerConfig" class="sign-up"></taste-auth-form>
+    </div>
+  </div>
+</div>

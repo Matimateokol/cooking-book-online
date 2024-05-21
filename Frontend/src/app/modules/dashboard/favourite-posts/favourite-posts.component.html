@@ -1,0 +1,8 @@
+<div
+  *ngIf="_posts"
+  class="tasty-favourite-posts__container"
+>
+  <div *ngFor="let post of _posts">
+    <tasty-post-summary [_post]="post"></tasty-post-summary>
+  </div>
+</div>

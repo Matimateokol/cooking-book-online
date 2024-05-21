@@ -1,0 +1,10 @@
+@import "src/assets/styles/variables.scss";
+
+.tasty-favourite-posts {
+  &__container {
+    margin: $main-size * 10 0;
+    display: flex;
+    flex-direction: column;
+    gap: $main-size * 15;
+  }
+}

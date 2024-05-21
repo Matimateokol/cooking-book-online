@@ -1,0 +1,22 @@
+@import "src/assets/styles/variables.scss";
+
+@mixin default-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: $main-size * 2 $main-size * 5;
+  color: $color-white;
+  background: $color-main;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($color-main, 0.95);
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:disabled {
+    background-color: rgba($color-main, 0.1);
+    cursor: unset;
+  }
+}

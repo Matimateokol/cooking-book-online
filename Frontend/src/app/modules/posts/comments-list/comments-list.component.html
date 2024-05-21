@@ -1,0 +1,15 @@
+<div class="tasty-comments-list__container">
+  <div class="tasty-comments-list__text">
+    Comments ({{ post.comments?.length }})
+  </div>
+  <div class="tasty-comments-list__add-comment">
+    <tasty-add-comment
+      [post]="post"
+      (commentAdded)="refreshComments()"
+    ></tasty-add-comment>
+  </div>
+  <tasty-comment
+    [comment]="comment"
+    *ngFor="let comment of post.comments"
+  ></tasty-comment>
+</div>
