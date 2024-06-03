@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA88EF98-F597-DACA-C383-A73567F0AA17" name="post">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>F1A8A008-7891-5CE0-80A3-C05EE946F460</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4C989EA1-FCF8-D28A-51AE-893FA1CBB520">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>D2F200F1-E682-C779-AAE3-6D48F11F86CD</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="6C4E6870-1F96-84A4-D415-E59AFC6C7174">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>E40DBBE9-C8C2-61B7-F573-8EFEE6F383B3</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="594E3F22-B8F4-90F9-0A20-CF591A78BD12">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>9CCAEAFE-CCE2-380B-2545-548EE088E53A</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="short_description" id="8DFA0DC3-FAF4-1C9E-C49B-868AA494483B">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>C99D9A87-D254-C657-C0AC-3EBF8A21D180</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="difficulty" id="4E0B7490-9523-CD5D-E535-DF54D23BDF45">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>5FBAC0E0-4899-959C-FBDE-95E1586F9418</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cooking_time" id="3D07E3AD-2FF0-9D70-DFCE-CACD81997AF9">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>7A1C5912-72BF-F566-B9CD-F35F44BA12BB</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created" id="55CA0151-7BAA-C781-5B86-A5010381F175">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>4E01A07D-D335-4AA9-9B4D-0228D4C575DF</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated" id="3620DDC5-E24E-8141-BD3F-463EC2AE1927">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>FE92CCA2-284F-3FCE-D1BC-193A3174FBA8</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="F51B0D82-19A9-499C-41A6-1CA0E7D87C6F">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>62B3D2C2-C347-D766-B77B-77AD31494CC4</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB06F19F-7B42-8A10-1A21-FA1E04F7A8F9" referredColumn="9F2EC142-CA45-9D32-8AA7-B086971B145E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB0C2351-99C1-105A-CCBA-AB365382107F" name="post_PK">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="4C989EA1-FCF8-D28A-51AE-893FA1CBB520"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C9E6CBD-67A1-C627-9969-66C02D84979F" name="post_id_UN">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>F1C0CF89-DDF7-2434-9460-A65482C63C54</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C989EA1-FCF8-D28A-51AE-893FA1CBB520"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0027E7B-86F0-113F-D8BE-B0DA89FC4BC2" name="post_user_FK">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>0F9F6F6B-C4DD-B6F8-2D4D-3A921C844E9E</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F51B0D82-19A9-499C-41A6-1CA0E7D87C6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

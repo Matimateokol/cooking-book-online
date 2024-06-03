@@ -1,0 +1,31 @@
+User - Media 
+Relacja: Jeden User może mieć jedno lub wiele Media, ale każde Media może być powiązane tylko z jednym User 
+Typ relacji: 1:N (jeden do wielu).
+
+User - Post
+Relacja: Jeden User może utworzyć wiele Post ale każdy Post jest przypisany tylko do jednego User 
+Typ relacji: 1:N (jeden do wielu).
+
+User - Comment
+Relacja: Jeden User może zostawić wiele Comment, ale każdy Comment jest przypisany tylko do jednego User 
+Typ relacji: 1:N (jeden do wielu).
+
+User - Favourite Post
+Relacja: Jeden User może mieć wiele Favourite Post, a każdy Favourite Post może być przypisany tylko do jednego User 
+Typ relacji: 1:N (jeden do wielu).
+
+Post- Favourite Post
+Relacja: Jeden Post może mieć wiele Favourite Post, a każdy Favourite Post jest przypisany tylko do jednego Post
+Typ relacji: 1:N (jeden do wielu).
+
+Post- Comment
+Relacja: Jeden Post może mieć wiele Comment, a każdy Comment jest przypisany tylko do jednego Post 
+Typ relacji: 1:N (jeden do wielu).
+
+Post- Ingderdient
+Relacja: Jeden Post może mieć wiele Ingderdient, ale każdy Ingderdient jest przypisany tylko do jednego Post 
+Typ relacji: 1:N (jeden do wielu).
+
+Post - Preperation step
+Relacja: Jeden Post może mieć wiele Preperation step , ale każdy Preperation step jest przypisany tylko do jednego Post 
+Typ relacji: 1:N (jeden do wielu)

@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABAF4E86-558C-1FC8-97EC-04D10304EF5E" name="comment">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>D0F80249-4489-CB9F-F4AE-8EA02B6E928F</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="AB241370-ACC9-103D-17BA-99E333E58D2A">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>8734DBF6-B643-F34D-2904-0FDC138C3944</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created" id="DFE320D5-E9A6-48D9-463E-804204654DA3">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>9DBF0F5B-2FEC-9CD7-AF49-ABD6FD352964</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="77AF4BAC-801F-AEA1-BB6B-CC6E7DC84915">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>A32AE5CC-DCFE-4976-7A71-0B755F9E9C3E</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCB664B0-BED6-E996-44DF-7DF6C808220E" referredColumn="9F2EC142-CA45-9D32-8AA7-B086971B145E"/>
+</associations>
+</Column>
+<Column name="description" id="000790CC-9430-8753-2F0A-933C4E5A8491">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>E1A6CF85-D681-BB44-3434-032FAC2DCD21</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="post_id" id="6CF66061-1337-303A-7790-1F587BE2F8E3">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-20 14:57:26 UTC</createdTime>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A433CA6-2D65-4802-DDEF-9E87F6CF9F48" referredColumn="4C989EA1-FCF8-D28A-51AE-893FA1CBB520"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E155E421-17D1-41E3-821E-9AB151B8647C" name="comment_PK">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>3C7AB81A-B706-09FB-E114-4C177C5439E6</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB241370-ACC9-103D-17BA-99E333E58D2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23EFAECA-CDDF-FA93-ABE5-008D6B0634BD" name="comment_post_FK">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>98DE82D0-5521-67B4-2F9D-0F685CB9EC35</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CF66061-1337-303A-7790-1F587BE2F8E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00D9334D-6071-BDD9-49BB-1D363EEBCBF4" name="comment_user_FK">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>269B3BD3-E56D-E5CA-4384-2BE75BA3A55B</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77AF4BAC-801F-AEA1-BB6B-CC6E7DC84915"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -48,13 +48,6 @@ Business requirements:
 - Viewing a user's profile
 - Edit a user's profile
 
-## Authors and acknowledgment
-
-* Rafał Zan
-* Piotr Sioch
-* Mikołaj Bańkowski
-
-
 ## Project status
 
 Currently, in development

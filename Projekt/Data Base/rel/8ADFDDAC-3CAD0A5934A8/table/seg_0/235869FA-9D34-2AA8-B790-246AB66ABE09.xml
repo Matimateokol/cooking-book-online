@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="235869FA-9D34-2AA8-B790-246AB66ABE09" name="preperation_step">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>D1D53433-553A-1A77-ED25-1085526930DE</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="08CE8CCE-091C-4018-B2F9-D34F1F0D14A0">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>BBF71626-50E1-402C-C430-839EA8A62409</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="A8E70011-77EC-3704-8DAC-7D79E5625B24">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>BF24453D-E5AB-F547-CC9C-CF0B7CD858E0</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="9BE99974-A413-FF6D-7E0F-EB1A6CBCF8CE">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>86C65739-9C54-1B9F-7753-318FDC5B17BC</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="post_id" id="6A33C8CC-7466-4B32-3487-65DF5FF589BF">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>0D9C8391-6884-63B2-DFC0-628A913CB98A</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4542AF12-A1C7-BE01-F681-1F1E38257DCD" referredColumn="4C989EA1-FCF8-D28A-51AE-893FA1CBB520"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A78D30F-FE64-2F8A-CB77-33A20380680C" name="preperation_step_PK">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>236050DA-3DD7-EB14-26DC-D23A7704716D</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08CE8CCE-091C-4018-B2F9-D34F1F0D14A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B9F7CDD-0C32-BDAC-8FBB-284D7744FF5F" name="preperation_step_post_FK">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>914D5DAE-C6F2-193E-6B5D-B102D35F93AF</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A33C8CC-7466-4B32-3487-65DF5FF589BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

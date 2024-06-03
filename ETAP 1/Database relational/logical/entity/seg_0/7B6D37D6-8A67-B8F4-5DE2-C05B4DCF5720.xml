@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7B6D37D6-8A67-B8F4-5DE2-C05B4DCF5720" name="favourite_post">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-03-31 11:09:44 UTC</createdTime>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<engineerTo>
+<item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="2AC5BC74-0BEE-85AE-70D5-FB0DAD25B635">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-03-31 11:09:56 UTC</createdTime>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<engineerTo>
+<item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="B4BBF9A0-B773-36D0-D94F-A4C6CAA9AC98">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-09 15:54:37 UTC</createdTime>
+<generatorID>EF02E639-8830-3F5C-AF6C-255C419D615C</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<engineerTo>
+<item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
+</engineerTo>
+<referedAttribute>CF601A0E-8F13-F97F-8A3B-6EBBCA6EDAD9</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="71E9846B-1C2A-2412-F6EF-6B524CEFDB31">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-09 15:55:50 UTC</createdTime>
+<generatorID>A5B4944C-9FB1-D46A-6C97-80DA17F86BCA</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<engineerTo>
+<item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
+</engineerTo>
+<referedAttribute>D2F200F1-E682-C779-AAE3-6D48F11F86CD</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E6F65708-299E-8F5E-179E-DC550EDA0836" name="favourite_posts PK">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-03-31 11:10:54 UTC</createdTime>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<engineerTo>
+<item key="8ADFDDAC-BB10-ECB0-05CB-3CAD0A5934A8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2AC5BC74-0BEE-85AE-70D5-FB0DAD25B635</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

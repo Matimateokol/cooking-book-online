@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0C75F05-B387-CBE7-5540-7A4B0EB86A72" name="media">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>ACD40372-8D7E-6865-6847-BEDB469EEBCB</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4300D5A5-B60D-ED05-8C5F-99F816D4BE3E">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>41071B77-E644-8CC6-B3BD-F52F31C1821C</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="linkedin" id="80C46B43-2571-B520-5862-D77A442A3A93">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>8049C5B8-9CE0-9995-2D92-9357FA136B1D</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="facebook" id="063CEF8E-CED7-FE6A-96D1-578ACDAF6091">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>FA4B6E23-14CA-6641-C166-EC939CC9188A</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="x" id="56A0B92F-DAB3-3D2C-57A5-97A23E3217F8">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>BE9B8F98-A848-1151-2105-14210E3FC4D0</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="github" id="8617A474-EF15-8599-AB0B-628690D0033A">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>64D51D95-D3A1-F9D5-70E7-3360E69433DA</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="discord" id="D0F23373-ED29-FD9E-0924-6DAEC7F8EA0B">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>9C162F6B-244E-4649-9FB0-C3B010DADDE5</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="6C0B62FF-DD03-66D7-C3D2-A187ACDF83D7">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>C2FF9359-7757-28BC-E15A-9E8ECDAB9672</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="44DE5C75-8C2D-4789-C81C-F34122DBEB7F" referredColumn="9F2EC142-CA45-9D32-8AA7-B086971B145E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="385304EB-D5D8-E1CA-9EDD-625B92F6DEE7" name="media_PK">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>421BA505-D243-461E-5A45-01FD73A8BCF7</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4300D5A5-B60D-ED05-8C5F-99F816D4BE3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B59C8C9-3BF4-BA7A-D2B2-A82DFC2EC8CB" name="media__IDX">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>58C58F23-D95B-BF53-6891-44CA2C931CBA</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6C0B62FF-DD03-66D7-C3D2-A187ACDF83D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AF3E6B0-1ADB-8B80-5CBD-866DEB6E35D4" name="media_user_FK">
+<createdBy>Mikołaj</createdBy>
+<createdTime>2024-04-19 20:01:04 UTC</createdTime>
+<generatorID>58C58F23-D95B-BF53-6891-44CA2C931CBA</generatorID>
+<ownerDesignName>BD2 - projekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C0B62FF-DD03-66D7-C3D2-A187ACDF83D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
